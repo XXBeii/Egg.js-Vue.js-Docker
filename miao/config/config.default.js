@@ -7,6 +7,14 @@ module.exports = appInfo => {
   config.keys = appInfo.name + '_1537971878459_2399';
 
   // add your config here
+  config.sequelize = {
+    dialect: 'mysql',
+    database: 'miao',
+    host: 'localhost',
+    port: '3306',
+    username: 'root',
+    password: '',
+  };
   config.middleware = [];
 
   return config;

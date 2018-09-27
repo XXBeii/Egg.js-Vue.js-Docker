@@ -33,7 +33,10 @@
     "cov": "egg-bin cov",
     "lint": "eslint .",
     "ci": "npm run lint && npm run cov",
-    "autod": "autod"
+    "autod": "autod",
+    "m:new": "sequelize migration:create",
+    "m:up": "sequelize db:migrate",
+    "m:down": "sequelize db:migrate:undo"
   },
   "ci": {
     "version": "8"
